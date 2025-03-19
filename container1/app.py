@@ -15,7 +15,7 @@ def calculate():
         return jsonify({"file": None, "error": "Invalid JSON input."}), 400
     
     file_name = data['file']
-    file_path = f"/input_data/{file_name}"  # Mounted volume path
+    file_path = f"/malav_PV_dir/{file_name}"  # Mounted volume path
 
     # Check if file exists
     if not os.path.exists(file_path):

@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/process', methods=['POST'])
 def process_file():
     data = request.get_json()
-    file_path = f"/input_data/{data['file']}"
+    file_path = f"/malav_PV_dir/{data['file']}"
     product = data['product']
 
     try:

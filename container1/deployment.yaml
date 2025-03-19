@@ -17,7 +17,7 @@ spec:
           image: 
           volumeMounts:
             - name: standard-volume
-              mountPath: /k8_assignment
+              mountPath: /malav_PV_dir
       volumes:
         - name: standard-volume
           persistentVolumeClaim:
